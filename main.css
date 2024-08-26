@@ -1,0 +1,673 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #eedc82;
+}
+
+#NavigationBar1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #805c5f;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+#ShadowHaven {
+  font-size: 30px;
+  color: #eedc82;
+  margin-left: 20px;
+  line-height: 60px;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#ShadowHaven:hover {
+  color: #000;
+}
+
+#NavigationBar1 input {
+  width: 30%;
+  height: 30px;
+  border-radius: 15px;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+#NavigationBar1 input:hover {
+  border: 3px solid #000000;
+}
+
+#Idk {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 25px;
+}
+
+#Login {
+  width: 75px;
+  height: 40px;
+  background-color: #eedc82;
+  font-size: 18px;
+  font-style: italic;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  line-height: 39px;
+  border-radius: 20px;
+  margin-right: 10px;
+  transition: 0.1s linear all;
+}
+
+#Login:hover {
+  background-color: #cf7979;
+  color: #eedc82;
+  font-style: normal;
+  transition: 0.1s linear all;
+}
+
+#Idk img {
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+#NavigationBar2 {
+  background-color: #805c5f;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+#NavigationBar2 a {
+  color: #eedc82;
+  text-decoration: none;
+  line-height: 40px;
+  padding: 4px 15px 8px;
+  position: relative;
+  cursor: pointer;
+}
+
+#NavigationBar2 a:hover {
+  color: #000;
+}
+
+#Dropdown {
+  position: relative;
+}
+
+#DropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #805c5f;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+#DropdownContent a {
+  color: #eedc82;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  min-width: max-content;
+}
+
+#DropdownContent a:hover {
+  background-color: #cf7979;
+  color: #000;
+}
+
+#Dropdown:hover #DropdownContent {
+  display: block;
+}
+
+#Categories {
+  top: 4px;
+}
+
+#Services {
+  top: 4px;
+}
+
+#NestedDropdownContent {
+  display: none;
+  position: absolute;
+  left: 180px;
+  top: 180px;
+  background-color: #805c5f;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+#OtherServices:hover #NestedDropdownContent {
+  display: block;
+}
+
+footer {
+  background-color: #805c5f;
+  color: #eedc82;
+  text-align: center;
+  margin: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-left: auto;
+  width: 100%;
+}
+
+footer a {
+  color: #eedc82;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+footer p {
+  margin: 15px 20px;
+}
+
+footer a:hover {
+  color: #000;
+}
+
+#homeContent {
+  margin-top: 80px;
+  padding: 20px;
+  text-align: center;
+}
+
+#About {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 20px;
+  width: 66%;
+  margin: 15px auto;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  text-align: justify;
+  background-color: #805c5fee;
+  padding: 25px 40px;
+  border-radius: 8px;
+}
+
+#About h2 {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#About h2 span {
+  color: #eedc82;
+}
+
+#BookCollage {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 72%;
+  margin: 40px auto 20px;
+  place-content: flex-start;
+}
+
+
+.BookCard {
+  width: 172px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.BookCard img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: top;
+  height: auto;
+  border-radius: 1px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.BookCard h4 {
+  margin: 10px 0 5px 0;
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  line-height: 1.33;
+  min-height: 72px;
+  color: #eee;
+  padding: 0 10px;
+}
+
+.BookCard h6 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  color: #ddd;
+  margin: 0;
+}
+
+.BookCard p {
+  font-size: 14px;
+  color: #eedc82;
+  font-style: italic;
+}
+
+.rating {
+  margin: 10px 0;
+  font-size: 20px;
+  color: gold;
+}
+
+.rating span {
+  color: white;
+  font-size: 14px;
+  position: relative;
+  bottom: 2px;
+}
+
+.addToCart,
+.addToWishlist,
+.goToWishlist,
+.goToCart {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.addToCart, .goToCart {
+  background-color: #eedc82;
+  color: black;
+  font-style: italic;
+  border-radius: 20px;
+  padding: 10px 15px;
+  transition: 0.1s linear all;
+}
+
+.addToCart:hover, .goToCart:hover {
+  background-color: #cf7979;
+  color: #eedc82;
+  font-style: normal;
+  transition: 0.1s linear all;
+}
+
+.goToCart {
+  background-color: #cf7979;
+  color:#000000;
+}
+
+.goToCart:hover {
+  background-color: #eedc82;
+  color:#000000;
+}
+
+.addToWishlist {
+  background-color: transparent;
+  color: black;
+  font-size: 18px;
+  border: 1px solid;
+  border-color: black;
+  border-radius: 50%;
+  padding: 3px;
+  transition: 0.1s linear all;
+}
+
+.goToWishlist {
+  background-color: transparent;
+  color: red;
+  font-size: 18px;
+  border: 1px solid;
+  border-color: red;
+  border-radius: 50%;
+  padding: 3px;
+  transition: 0.1s linear all;
+}
+
+.addToWishlist:hover, .goToWishlist:hover {
+  scale: 1.1;
+  transition: 0.1s linear all;
+}
+
+.addToCart[disabled] {
+  background-color: #ddd;
+  color: #999;
+  cursor: not-allowed;
+  font-style: normal;
+}
+
+.BookCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.toast {
+  background-color: #ddd;
+  color: black;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.toast:hover {
+  opacity: 1;
+}
+
+#cart {
+  position: relative;
+}
+
+#cartCount {
+  position: absolute;
+  right: 24px;
+  bottom: 10px;
+  z-index: 2;
+  background-color: #eedc82;
+  padding: 3px 6px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.animated-count {
+  animation: pulse 0.3s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bookWrapper {
+  background-color: #805C5F;
+  padding: 0px 0px 15px 0px;
+  border-radius: 8px;
+}
+
+.bookActionWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0px 15px;
+}
+
+#wishlist_registries_info > * {
+  color: #fff;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.info-section {
+  width: 40%;
+  text-align: center;
+  background-color: #805C5F;
+  padding: 25px 40px;
+  border-radius: 8px;
+  line-height: 1.4;
+}
+
+.info-section h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #eee;
+}
+
+.info-section ul {
+  list-style-type: circle;
+  padding-left: 20px;
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.info-section ul li {
+  margin-bottom: 10px;
+}
+
+.info-section p {
+  color: #eedc82;
+}
+
+.info-section h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+#shoppingCartHeader {
+  font-size: 30px; 
+  color: #805C5F; 
+  font-weight: bold; 
+  padding-top: auto;
+  margin: 20px 0; 
+  margin-left: 4%;
+  display: inline-block; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#cart_content {
+  margin-left: 25%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#cartItems {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #805C5F;
+  border-radius: 8px;
+}
+
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  border-bottom: 2px dashed #cf7979;
+  padding-bottom: 10px;
+}
+
+.cartItem img {
+  width: 100px;
+  aspect-ratio: 3 / 4;
+  height: auto;
+  transform: skewX(-5deg);
+  border-radius: 4px;
+  transition: 0.1s linear all;
+  scale: 1;
+  box-shadow: 10px 10px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.cartItem img:hover {
+  scale: 1.2;
+  transition: 0.1s linear all;
+}
+
+.cartItem h4 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.cartItem h6 {
+  font-size: 18px;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cartItem p {
+  margin: 0;
+}
+
+.cartItem button {
+  background-color: #eedc82;
+  color: black;
+  font-style: italic;
+  border-radius: 20px;
+  padding: 10px 15px;
+  transition: 0.1s linear all;
+}
+
+.cartItem button:hover {
+  background-color: #cf7979;
+  color: #eedc82;
+  font-style: normal;
+  transition: 0.1s linear all;
+}
+
+#cartActions {
+  padding: 20px;
+  align-self: flex-end;
+}
+
+#cartActions h3 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black;
+  font-size: 24px;
+}
+
+#totalPrice {
+  text-align: right;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black;
+  font-size: 24px;
+}
+
+#checkoutButton {
+  color: black;
+  background-color: #eedc82;
+  font-style: italic;
+  border-radius: 40px;
+  padding: 20px 30px;
+  transition: 0.1s linear all;
+  margin-inline-start: auto;
+  font-size: 20px;
+}
+
+#checkoutButton:hover {
+  background-color: #cf7979;
+  color: #eedc82;
+  font-style: normal;
+  transition: 0.1s linear all;
+}
+
+#wishlist_content {
+  color: #fff;
+  margin: 75px 40px 25px;
+  padding: 20px;
+}
+
+#wishlist_content h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 24px;
+  color: #000000;
+  margin-left: 20px;
+}
+
+#wishlistItems {
+  display: flex;
+  flex-wrap: wrap;
+  place-content: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.wishlistItem {
+  display: flex;
+  background-color: #805C5F;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 15px;
+  width: 200px;
+  border-radius: 8px;
+}
+
+.wishlistItem img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: top;
+  height: auto;
+  border-radius: 1px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.wishlistItem h4 {
+  margin: 10px 0 5px 0;
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  line-height: 1.33;
+  min-height: 48px;
+  color: #eee;
+  text-align: center;
+}
+
+.wishlistItem h6 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  color: #ddd;
+  margin: 0;
+}
+
+.wishlistItem p {
+  font-size: 14px;
+  color: #eedc82;
+  font-style: italic;
+}
+.wishlistItem label {
+  margin-top: 10px;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.wishlistItem button {
+  background-color: #eedc82;
+  color: black;
+  font-style: italic;
+  border-radius: 20px;
+  padding: 10px 15px;
+  transition: 0.1s linear all;
+}
+
+.wishlistItem button:hover {
+  background-color: #cf7979;
+  color: #eedc82;
+  font-style: normal;
+  transition: 0.1s linear all;
+}
+
+.content-section {
+  margin-top: 90px;
+}

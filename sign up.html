@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body{
+            background-color: #eedc82;
+        }
+
+        #logsign{
+            background-color: #805C5F;
+            width: 400px;
+            height: 500px;
+            
+            margin-top: 60px;
+            margin-left: 475px;
+            border-radius: 10px;
+        }
+
+        h3{
+            margin-left: 150px;
+            padding-top: 15px;
+            font-size: 30px;
+            font-weight: 1;
+        }
+
+        label{
+            margin-left: 45px;
+        }
+
+        input{
+            margin-left: 45px;
+            width: 300px;
+            height: 30px;
+            border-radius: 10px;
+
+        }
+
+        #ssu{
+            display: block;
+            background-color: #eedc82;
+            width: 310px;
+            height: 40px;
+
+            font-size: 20px;
+            color: #000000;
+
+            text-align: center;
+            text-decoration: none;
+            line-height: 35px;
+            border-radius: 10px;
+
+            margin-top: 10px;
+            margin-left: 45px;
+        }
+
+        #ssu:hover{
+            background-color: #cf7979;
+            color: #eedc82;
+            font-style: italic;
+        }
+
+        #haa{
+            color: #eedc82;
+            margin-left: 120px;
+        }
+
+        #login{
+            text-decoration: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div id="logsign">
+
+        <h3>Sign Up</h3>
+
+        <label for="name">Your Name :</label>         <br>
+        <input type="email"  placeholder="name"  required="required"  id="name">        <br><br>
+
+        <label for="email">Email :</label>         <br>
+        <input type="email"  placeholder="name@email.com"  required="required"  id="email">        <br><br>
+
+        <label for="pw">Password :</label>        <br>
+        <input type="password" placeholder="password"  required="required"  id="pw">          <br><br>
+
+        <label for="cpw">Comfrim Password :</label>        <br>
+        <input type="password" placeholder="comfrim password"  required="required"  id="cpw">          <br><br>
+
+        <a href="main.html"  id="ssu">Sign Up</a>                        <br>
+
+        <div    id="haa">Have an account?
+            <a href="login.html"  id="login">Login</a>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Wishlist - ShadowHaven</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <nav>
+        <div id="toastContainer" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;"></div>
+        <div id="NavigationBar1">
+            <a href="main.html#home" id="ShadowHaven">ShadowHaven</a>
+            <input type="search" placeholder="Enter keywords..." required="required">
+            <div id="NavigationBar2">
+                <div id="Dropdown">
+                    <a href="Categories.html" id="Categories">Categories</a>
+                    <div id="DropdownContent">
+                        <a href="New Books.html">New Books</a>
+                        <a href="Best Sellers.html">Best Sellers</a>
+                        <a href="Fiction.html">Fiction</a>
+                        <a href="Non-Fiction.html">Non-Fiction</a>
+                        <a href="Science.html">Science</a>
+                        <a href="History.html">History</a>
+                    </div>
+                </div>
+                <a href="wishlist_registries.html" id="Wishlists">Wishlists & Registries (1)</a>
+                <div id="Dropdown">
+                    <a href="Services.html" id="Services">Services</a>
+                    <div id="DropdownContent">
+                        <a href="Services.html" class="ShowPackages">Gift Cards</a>
+                        <a href="Services.html" class="ShowPackages">Review Forums</a>
+                        <a href="Services.html" class="ShowPackages">Live Discussion Groups</a>
+                        <div id="OtherServices">
+                            <a href="Services.html" class="ShowPackages">Other Services</a>
+                            <div id="NestedDropdownContent">
+                                <a href="Services.html" class="ShowPackages">Box of Refreshments</a>
+                                <a href="Services.html" class="ShowPackages">Members Book of the Month</a>
+                                <a href="Services.html" class="ShowPackages">Merchandise</a>
+                                <a href="Services.html" class="ShowPackages">Charity Book Donation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="main.html#pro" id="ShadowPro">ShadowPro</a>
+            </div>
+            <div id="Idk">
+                <a href="login.html" id="Login">Login</a>
+                <div id="Cart"><img src="10485973.png" alt="" /><span id="cartCount">2</span></div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="wishlist_content">
+        <h2>Your Wishlist</h2>
+        <div id="wishlistItems">
+            <div class="wishlistItem">
+                <img loading="lazy" src="Dracula.jpg" alt="Dracula">
+                <h4>Dracula</h4>
+                <p>Bram Stoker</p>
+                <h6>$8.99</h6>
+                <label>
+                    <input type="checkbox" class="isRegistryCheckbox" data-id="1" checked>
+                    This is also a registry
+                </label>
+                <button class="removeFromWishlist" data-id="1">Remove</button>
+            </div>
+
+            <div class="wishlistItem">
+                <img loading="lazy" src="Educated.jpg" alt="Educated">
+                <h4>Educated</h4>
+                <p>Tara Westover</p>
+                <h6>$18.99</h6>
+                <label>
+                    <input type="checkbox" class="isRegistryCheckbox" data-id="1" checked>
+                    This is also a registry
+                </label>
+                <button class="removeFromWishlist" data-id="1">Remove</button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="Footer">
+        <p>&copy; 2024 ShadowHaven</p>
+        <p>Contact Us: <a href="mailto:contact@shadowhaven.com">contact@shadowhaven.com</a></p>
+    </footer>
+
+</body>
+
+</html>

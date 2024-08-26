@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f5f0c9; /* Light cream background */
+}
+
+#NavigationBar1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #805c5f;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for better separation */
+}
+
+#ShadowHaven {
+    font-size: 30px;
+    color: #eedc82;
+    margin-left: 20px;
+    line-height: 60px;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#ShadowHaven:hover {
+    color: #ffffff;
+}
+
+#NavigationBar1 input {
+    width: 30%;
+    height: 30px;
+    border-radius: 15px;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+#NavigationBar1 input:hover {
+    border: 3px solid #000000;
+}
+
+#Idk {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+#Login {
+    width: 75px;
+    height: 40px;
+    background-color: #eedc82;
+    font-size: 18px;
+    font-style: italic;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    line-height: 39px;
+    border-radius: 20px;
+    margin-right: 10px;
+    transition: 0.1s linear all;
+}
+
+#Login:hover {
+    background-color: #cf7979;
+    color: #eedc82;
+    font-style: normal;
+    transition: 0.1s linear all;
+}
+
+#Idk img {
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+#NavigationBar2 {
+    background-color: #805c5f;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#NavigationBar2 a {
+    color: #eedc82;
+    text-decoration: none;
+    line-height: 40px;
+    padding: 4px 15px 8px;
+    position: relative;
+    cursor: pointer;
+}
+
+#NavigationBar2 a:hover {
+    color: #000;
+}
+
+#Dropdown {
+    position: relative;
+}
+
+#DropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #805c5f;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#DropdownContent a {
+    color: #eedc82;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    min-width: max-content;
+}
+
+#DropdownContent a:hover {
+    background-color: #cf7979;
+    color: #000;
+}
+
+#Dropdown:hover #DropdownContent {
+    display: block;
+}
+
+#Categories {
+    top: 4px;
+}
+
+#Services {
+    top: 4px;
+}
+
+#NestedDropdownContent {
+    display: none;
+    position: absolute;
+    left: 180px;
+    top: 180px;
+    background-color: #805c5f;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#OtherServices:hover #NestedDropdownContent {
+    display: block;
+}
+
+#cartCount {
+    position: absolute;
+    right: 25px;
+    top: 32px;
+    z-index: 2;
+    background-color: #eedc82;
+    padding: 3px 6px;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 1;
+}
+
+#Cart img {
+    width: 50px;
+    height: 50px;
+}
+
+#proSectionmain{
+    text-decoration: none;
+}
+
+#proSection {
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f5f0c9; /* Matching the background with the rest of the body */
+    margin-top: 100px; /* Adjust the margin-top to avoid overlap with navbar */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow for better separation */
+}
+
+#PackagesWrapper {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 0 auto 30px;
+    width: 80%;
+}
+
+.PackageCard {
+    background-color: #fff8d4;
+    color: #5c3c4e;
+    padding: 20px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.PackageCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.PackageCard h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #5c3c4e;
+    font-family: 'Georgia', serif;
+}
+
+.PackageCard p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.PackageCard p span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5c3c4e;
+}
+
+footer {
+    background-color: #5c3c4e;
+    color: #eedc82;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+    color: #eedc82;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ffffff;
+}

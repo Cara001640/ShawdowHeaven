@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #eedc82;
+}
+
+#NavigationBar1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #805c5f;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+#ShadowHaven {
+    font-size: 30px;
+    color: #eedc82;
+    margin-left: 20px;
+    line-height: 60px;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#ShadowHaven:hover {
+    color: #000;
+}
+
+#Idk {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+#Login {
+    width: 75px;
+    height: 40px;
+    background-color: #eedc82;
+    font-size: 18px;
+    font-style: italic;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    line-height: 39px;
+    border-radius: 20px;
+    margin-right: 10px;
+    transition: 0.1s linear all;
+}
+
+#Login:hover {
+    background-color: #cf7979;
+    color: #eedc82;
+    font-style: normal;
+    transition: 0.1s linear all;
+}
+
+#Idk img {
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+#NavigationBar2 {
+    background-color: #805c5f;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#NavigationBar2 a {
+    color: #eedc82;
+    text-decoration: none;
+    line-height: 40px;
+    padding: 4px 15px 8px;
+    position: relative;
+    cursor: pointer;
+}
+
+#NavigationBar2 a:hover {
+    color: #000;
+}
+
+#cartCount {
+    position: absolute;
+    right: 25px; 
+    top: 32px;
+    z-index: 2;
+    background-color: #eedc82;
+    padding: 3px 6px;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 1;
+}
+
+#Cart img {
+    width: 50px;
+    height: 50px;
+}
+
+
+#proSection {
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+
+#PackagesWrapper {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 0 auto 30px;
+    width: 71%;
+}
+
+.PackageCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eedc82;
+    color: #805c5f;
+    padding: 20px;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 50px;
+    background: #eedc82;
+    box-shadow:  20px 20px 60px #cabb6f,
+                -20px -20px 60px #fffd96;
+}
+
+
+
+.PackageCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.PackageCard h3 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.PackageCard ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+.PackageCard ul li {
+    margin-bottom: 10px;
+    font-style: italic;
+    line-height: 1.33;
+    text-wrap: wrap;
+}
+
+.Packageinfowrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.PackageCard p {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-top: auto;
+    text-align: center;
+}
+
+.PackageCard p span {
+    font-size: 24px;
+}
+
+#About {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+    width: 66%;
+    margin: 15px auto;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    text-align: justify;
+    background-color: #805c5fee;
+    padding: 25px 40px;
+    border-radius: 8px;
+}
+
+#About h2 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#About h2 span {
+    color: #eedc82;
+}
+
+footer {
+    background-color: #805c5f;
+    color: #eedc82;
+    text-align: center;
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: auto;
+    width: 100%;
+}
+
+footer a {
+    color: #eedc82;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer p {
+    margin: 15px 20px;
+}
+
+footer a:hover {
+    color: #000;
+}
